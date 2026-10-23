@@ -167,11 +167,16 @@ Explicit resources supplied directly:
 {% endcapture %}
 
 {% if rendered_count > 0 %}
-  <section class="resource-tiles-section bg-light border-top border-bottom mt-4 py-3 px-3" aria-labelledby="relevant-resources-heading">
-    <h2 id="relevant-resources-heading" class="h6 mb-2">Relevant resources</h2>
+  <section class="resource-tiles-section bg-light border-top border-bottom mt-4 py-3" aria-labelledby="relevant-resources-heading">
+    {% comment %}Match the nested Bootstrap containers used by page-navigation-tiles.html.{% endcomment %}
+    <div class="container">
+      <div class="container">
+        <h2 id="relevant-resources-heading" class="h6 mb-2">Relevant resources</h2>
 
-    <div class="resource-tiles row">
-      {{ resource_tiles_markup }}
+        <div class="resource-tiles row">
+          {{ resource_tiles_markup }}
+        </div>
+      </div>
     </div>
   </section>
 {% endif %}
