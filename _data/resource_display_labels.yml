@@ -31,3 +31,5 @@ types:
   service: "Service"
   specification: "Specification"
   tool: "Tool"
+  training-material: "Training material"
+  video: "Video"
