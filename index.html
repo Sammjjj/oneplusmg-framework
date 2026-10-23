@@ -29,12 +29,14 @@ navigation_tiles:
         </div>
     </div>
 <div class="landingpage">
-    <div class="container">
-        <section class="">
-            <h2 class="card-title pb-2 text-center mt-6">Navigate the framework by role</h2>
-            <p class="text-center mb-5">Find the guidance and resources most relevant to your role in the 1+MG initiative
-            </p>
-            <div class="row g-4 mb-4">
+    <section class="p-45">
+        <div class="container">
+            <h1 class="card-title pb-2 text-center pt-3">Navigate the framework by role</h1>
+            <p class="text-center mb-5">Find the guidance and resources most relevant to your role in the 1+MG initiative</p>
+
+            {% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
+
+            <div class="row g-4 pb-4">
                 <div class="col-12">
                     <div class="card border bg-white h-100">
                         <div class="card-body text-center">
@@ -45,72 +47,74 @@ navigation_tiles:
                     </div>
                 </div>
             </div>
-            {% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
-        </section>                      
-    </div>
+        </div>
+    </section>
+</div>
 
-
-    <section class="bg-light p-45">   
-    <div class="container">
-        <h1 class="card-title pb-2 text-center pt-3">1+MG Framework Foundations</h1>
+<div class="landingpage bg-light">
+    <section class="p-45">
+        <div class="container">
+            <h1 class="card-title pb-2 text-center pt-3">1+MG Framework Foundations</h1>
+            <p class="text-center mb-5">Explore the governance, technical, data and healthcare foundations for secure genomic data sharing across Europe</p>
 
             {%- assign sidebar1 = site.data.sidebars[page.sidebar1] %}
             {%- assign sidebar3 = site.data.sidebars[page.sidebar3] %}
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-4">
                 {%- for folder in sidebar1.subitems %}
-                    <div class="col">
-                        <div class="card border bg-white h-100">
-                        {%- if folder.image_url%}
-                        <img src="{{folder.image_url | relative_url}}" class="card-img-top h-icon-5 mx-auto" alt="{{folder.title}} icon">
-                        {%- endif %}
-                            <div class="card-body text-center">
-                            <a href="{{ folder.url | relative_url }}" class="stretched-link">
-                            <h3 class="card-title no-anchor text-primary">{{folder.title}}</h3>
-                            </a>
-                            <p class="card-text">{{folder.description}}</p>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                {%- endfor %}
-            </div>
-    </div>
-    </section>
-</div> 
-<div class="landingpage">              
-    <section class="p-45">
-        <div class="container">
-            <h1 class="card-title pb-2 text-center pt-3">Applying the 1+MG Framework</h1>
-            <p class="text-center mb-5">Design principles and real-world applications of the Framework across Europe
-            </p>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 pb-4">
-                {%- for folder in sidebar3.subitems %}
                 <div class="col">
                     <div class="card border bg-white h-100">
-                    {%- if folder.image_url%}
-                    <img src="{{folder.image_url | relative_url}}" class="card-img-top h-icon-5 mx-auto" alt="{{folder.title}} icon">
-                    {%- endif %}
+                        {%- if folder.image_url %}
+                        <img src="{{ folder.image_url | relative_url }}" class="card-img-top h-icon-5 mx-auto" alt="{{ folder.title }} icon">
+                        {%- endif %}
                         <div class="card-body text-center">
-                        <a href="{{ folder.url | relative_url }}" class="stretched-link">
-                            <h3 class="card-title no-anchor text-primary">{{folder.title}}</h3>
-                        </a>
-                            <p class="card-text">{{folder.description}}</p>
+                            <a href="{{ folder.url | relative_url }}" class="stretched-link">
+                                <h3 class="card-title no-anchor text-primary">{{ folder.title }}</h3>
+                            </a>
+                            <p class="card-text">{{ folder.description }}</p>
                         </div>
                     </div>
-                    </a>
                 </div>
                 {%- endfor %}
             </div>
         </div>
     </section>
-</div>                 
-    
-<div class="bg-light py-4">
+</div>
+
+<div class="landingpage">
+    <section class="p-45">
+        <div class="container">
+            <h1 class="card-title pb-2 text-center pt-3">Applying the 1+MG Framework</h1>
+            <p class="text-center mb-5">Design principles and real-world applications of the Framework across Europe</p>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 pb-4">
+                {%- for folder in sidebar3.subitems %}
+                <div class="col">
+                    <div class="card border bg-white h-100">
+                        {%- if folder.image_url %}
+                        <img src="{{ folder.image_url | relative_url }}" class="card-img-top h-icon-5 mx-auto" alt="{{ folder.title }} icon">
+                        {%- endif %}
+                        <div class="card-body text-center">
+                            <a href="{{ folder.url | relative_url }}" class="stretched-link">
+                                <h3 class="card-title no-anchor text-primary">{{ folder.title }}</h3>
+                            </a>
+                            <p class="card-text">{{ folder.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="landingpage bg-light">
     <section class="p-45">
         <div class="container">
             <h1 class="card-title pb-2 text-center pt-3">Projects</h1>
+            <p class="text-center mb-5">Explore the European projects supporting the development and implementation of the 1+MG vision</p>
+
             <div class="row g-4 pb-4">
-                <div class="col-12 landingpage">
+                <div class="col-12">
                     <div class="card border bg-white h-100">
                         <div class="card-body text-center">
                             <!-- Icon can be added here later. -->
