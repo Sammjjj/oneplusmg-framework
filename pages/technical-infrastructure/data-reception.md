@@ -1,7 +1,13 @@
 ---
-title: Data reception
-description: Introduction to data reception
+title: 'Data reception'
+description: 'Transfer, validate and describe genomic data and metadata.'
+permalink: "/data-reception"
+page_id: data-reception
+hide_sidebar: true
 ---
+
+[← Technical infrastructure]({{ '/technical-infrastructure' | relative_url }})
+
 
 Uniform processes (such as quality control and standardisation) to receive (download) or access (API) both data and metadata in a consistent way enabling infrastructure to adhere to global standards and principles (e.g. GA4GH, FAIR) for genotypic and phenotypic data. Data reception means logically describing datasets to an extent that they can become actionable on the 1+MG infrastructure even if they are stored nationally or locally.
 
@@ -18,10 +24,3 @@ DRS is a GA4GH standard API that provides a generic interface to data repositori
 
 ### [Refget](https://www.ga4gh.org/product/refget/) <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
 The first step of any genomic analysis is mapping the new sequence data to a reference sequence — a list of three billion base pairs that have been generally accepted as “normal” for a given population or subgroup. However, standard conventions for naming and identifying reference sequences are lacking. Different organisations refer to the same sequence differently. Developed by the GA4GH, the refget API provides a framework to retrieve reference sequences by using an algorithm to derive a unique identifier. The identifier can then be used to verify the integrity of the reference sequence.
-
-
-
-
-
-
-
