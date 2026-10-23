@@ -5,14 +5,6 @@ permalink: "/technical-infrastructure"
 page_id: technical-infrastructure
 ---
 
-## Test section
-
-{% include resource-tiles.html
-   resource_ids="beacon,refget,htsget,data-repository-service-drs"
-%}
-
-{% include resource-list.html framework_topic="technical-infrastructure" %}
-
 ## Infrastructure Vision
 
 ### [B1MG Secure cross-border data access roadmap v2.0](https://zenodo.org/record/5018526#.YXGlNNbMKdY): June 2021 <span class="badge badge-primary">Informational<i class="fa-sharp fa-solid fa-circle-info"></i></span>
