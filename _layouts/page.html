@@ -11,6 +11,9 @@ layout: default
     {%- endif %}
     </h1>
     {%- endif %}
+    {%- if page.show_resource_key == true %}
+    {% include resource-key.html %}
+    {%- endif %}
     {%- if page.summary %}
     <div class="summary">{{page.summary}}</div>
     {%- endif %}
