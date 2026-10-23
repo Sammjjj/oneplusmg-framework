@@ -34,7 +34,18 @@ navigation_tiles:
             <h2 class="card-title pb-2 text-center mt-6">Navigate the framework by role</h2>
             <p class="text-center mb-5">Find the guidance and resources most relevant to your role in the 1+MG initiative
             </p>
-            {% include page-navigation-tiles.html tiles=page.navigation_tiles %}
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <div class="card border bg-white h-100">
+                        <div class="card-body text-center">
+                            <a href="{{ '/navigate-by-role' | relative_url }}" class="stretched-link">
+                                <h3 class="card-title no-anchor text-primary">Explore how to navigate the framework by role here</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include page-navigation-tiles.html tiles=page.navigation_tiles match_foundations_grid=true %}
         </section>                      
     </div>
 
