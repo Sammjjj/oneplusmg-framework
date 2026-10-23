@@ -24,7 +24,10 @@ navigation_tiles:
 </div>
 
 <style>
-  /* On this landing page, let the final resource band meet the footer. */
+  /* Keep the final resource band adjacent to the footer on this landing page. */
+  .container.min-vh-100 {
+    min-height: 0 !important;
+  }
   main#main.mb-5 {
     margin-bottom: 0 !important;
   }
