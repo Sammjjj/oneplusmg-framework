@@ -1,4 +1,5 @@
 ---
+show_resource_key: true
 title: Rare diseases
 description: The rare disease use case has been the central use case demonstrating the 1+MG Infrastructure to date.
 page_id: rare-diseases
@@ -24,7 +25,7 @@ Given this information, the researcher wanted to know:
 1. Is there an association between the gene mutation and the disease?
 
 ## Rare disease Proof of Concept 
-<span class="badge badge-dark">Recommended<i class="fa-solid fa-thumbs-up"></i></span>
+{% include resource-marker.html recommendation="Recommended" %}
 
 <img src="{{ 'assets/img/rare-disease-proof-of-concept.png' | relative_url }}" class="m-2" style="max-width: 100%; max-height: 100%; vertical-align: middle" alt="Rare disease proof of concept" />
 
@@ -45,7 +46,7 @@ Proof of Concept completed  for Rare Disease utilising a number of existing GA4G
 </div>
 
 ## [Catalogue of Met and Unmet Use Case Needs](https://zenodo.org/records/10047185)
-<span class="badge badge-dark">Recommended<i class="fa-solid fa-thumbs-up"></i></span>
+{% include resource-marker.html recommendation="Recommended" %}
 
 * Planned further activities to meet the needs of the use cases as of 13/12/2022
 
@@ -57,7 +58,7 @@ Proof of Concept completed  for Rare Disease utilising a number of existing GA4G
 [https://resourcemap.ejprarediseases.org/](https://resourcemap.ejprarediseases.org/)
 
 ## Rare disease survey (in progress) 
-<span class="badge badge-primary">Informational<i class="fa-sharp fa-solid fa-circle-info"></i></span>
+{% include resource-marker.html recommendation="Informational" %}
 
 It covers different aspects related to sequencing data generation/capacities, data availability for rare disease patients and info on diagnostic yield, analytical pipelines, and availability on associated clinical info.  This has been sent to B1MG working group 8 experts and major rare disease sequencing centers in each member state.
 
