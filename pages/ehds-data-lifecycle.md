@@ -63,8 +63,4 @@ The above table lists the stages of the TEHDAS Data Lifecycle (which encompases 
 There are some elements that fall outside of this mapping.  The TEHDAS Project Finalization stage is related to the disclosure of results, which currently falls outside of the scope of 1+MG’s technical recommendations, but there are some relevant ELSI policies, such as the forthcoming "Policy on incidental findings" and the "Policy for communication of general research results".  Additionally, there are some elements of the 1+MG Framework which fall outside of the TEHDAS Data Lifecycle including the <a href="{{ '/genomics-into-healthcare' | relative_url }}">Implementation of Genomics into Healthcare</a> resources (focused on supporting national efforts at using genomic data within personalised medicine) and the specific scientific <a href="{{ '/usecases' | relative_url }}">Use Case</a> resources.
 
 <br />
-**We are still working on the content for this page.** If you are interested in adding to the page, then:
 
-[Feel free to contribute](how_to_contribute){: class="btn btn-primary btn-lg rounded-pill"}
-
-This is a community-driven website, so contributions are welcome! You will, of course, be listed as a contributor on the page.
