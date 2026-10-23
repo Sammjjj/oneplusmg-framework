@@ -1,4 +1,5 @@
 {%- assign resources = site.data.resources -%}
+{%- assign labels = site.data.resource_display_labels -%}
 
 <div id="resource-library" class="resource-library" data-resource-library>
   <div class="resource-library__intro">
@@ -130,11 +131,25 @@
         {%- assign rtype = resource.resource_type | default: "" -%}
         {%- assign status = resource.status | default: "" -%}
         {%- assign description = resource.short_description | default: resource.description | default: "" -%}
+        {%- assign type_label = labels.types[rtype] | default: rtype -%}
+        {%- capture topic_labels -%}
+          {%- for topic in resource.framework_topics -%}
+            {%- unless forloop.first -%}, {% endunless -%}
+            {{- labels.topics[topic] | default: topic -}}
+          {%- endfor -%}
+        {%- endcapture -%}
+        {%- capture audience_labels -%}
+          {%- for audience in resource.audiences -%}
+            {%- unless forloop.first -%}, {% endunless -%}
+            {{- labels.audiences[audience] | default: audience -}}
+          {%- endfor -%}
+        {%- endcapture -%}
         {%- assign url1 = resource.access_url_1 | default: resource.repository_url | default: resource.url -%}
         {%- assign url2 = resource.access_url_2 -%}
         {%- capture search_text -%}
           {{ resource.title }} {{ description }} {{ resource.deliverable_number }}
           {{ recommendation }} {{ topics }} {{ audiences }} {{ rtype }} {{ source }} {{ status }}
+          {{ topic_labels }} {{ audience_labels }} {{ type_label }}
         {%- endcapture -%}
 
         <tr
@@ -172,16 +187,16 @@
               {%- endif %}
               {%- if audiences != "" %}
                 <span class="resource-library__audiences">
-                  <span class="visually-hidden">Audience: </span>{{ resource.audiences | join: ", " }}
+                  <span class="visually-hidden">Audience: </span>{{ audience_labels }}
                 </span>
               {%- endif %}
             </div>
           </td>
 
-          <td data-sort-value="{{ rtype | downcase | escape }}">{{ rtype }}</td>
+          <td data-sort-value="{{ type_label | downcase | escape }}">{{ type_label }}</td>
 
-          <td data-sort-value="{{ topics | downcase | escape }}">
-            {{ resource.framework_topics | join: ", " }}
+          <td data-sort-value="{{ topic_labels | downcase | escape }}">
+            {{ topic_labels }}
           </td>
 
           <td data-sort-value="{{ source | downcase | escape }}">
@@ -397,6 +412,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const library = document.querySelector("[data-resource-library]");
+  const displayLabels = {{ site.data.resource_display_labels | jsonify }};
   if (!library) return;
 
   const rowsContainer = library.querySelector("[data-resource-rows]");
@@ -420,6 +436,12 @@ document.addEventListener("DOMContentLoaded", function () {
     return (value || "").toString().trim().toLowerCase();
   }
 
+  function readableLabel(field, value) {
+    const categories = { topic: "topics", audience: "audiences", type: "types" };
+    const group = categories[field] && displayLabels[categories[field]];
+    return (group && group[value]) || value;
+  }
+
   function populateFilter(select) {
     const field = select.dataset.filter;
     const values = new Map();
@@ -432,11 +454,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     Array.from(values.entries())
-      .sort((a, b) => a[1].localeCompare(b[1], undefined, { sensitivity: "base" }))
+      .sort((a, b) => readableLabel(field, a[0]).localeCompare(readableLabel(field, b[0]), undefined, { sensitivity: "base" }))
       .forEach(([key, label]) => {
         const option = document.createElement("option");
         option.value = key;
-        option.textContent = label;
+        option.textContent = readableLabel(field, key);
         select.appendChild(option);
       });
 
@@ -489,7 +511,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function getSortValue(row, field) {
     if (field === "title") return normalise(row.dataset.title);
-    if (field === "topic") return normalise(row.dataset.topic);
+    if (field === "topic") return normalise(splitValues(row.dataset.topic).map(value => readableLabel("topic", value)).join(", "));
+    if (field === "type") return normalise(readableLabel(field, row.dataset.type));
     return normalise(row.dataset[field]);
   }
 
