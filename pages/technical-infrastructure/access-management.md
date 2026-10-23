@@ -1,7 +1,13 @@
 ---
-title: Access management
-description: Introduction to access management
+title: 'Access management'
+description: 'Data access authorisation, identity management and standards for secure access.'
+permalink: "/access-management"
+page_id: access-management
+hide_sidebar: true
 ---
+
+[← Technical infrastructure]({{ '/technical-infrastructure' | relative_url }})
+
 
 Sensitive data needs specialised services to manage data in an ELSI compliant way. These include e.g. central access portal, central access review process, single collaboration/data use agreement. These tools store user applications for data use and the decisions from the data controllers, i.e. data access authorisations within the legal framework, as well as APIs and standards to communicate access rights to downstream infrastructure services. Together, these tools and processes facilitate and audit secure access for users on a chosen Data Processing service platform.
 
@@ -31,10 +37,3 @@ eID is a set of services provided by the European Commission to enable the mutua
 
 ### [EU-Wallet](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity_en) <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
 The European Digital Identity will be available to EU citizens, residents, and businesses who want to identify themselves or provide confirmation of certain personal information. It can be used for both online and offline public and private services across the EU.  This is an EU Standard that the 1+MG data access management standards should be compatible with.
-
-
-
-
-
-
-
