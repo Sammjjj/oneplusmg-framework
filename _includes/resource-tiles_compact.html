@@ -58,17 +58,13 @@ Explicit resources supplied directly:
 
           <div class="resource-tile col-12 col-md-6 col-lg-3 mb-2">
             <div class="card h-100 shadow-sm">
-              <div class="card-header bg-primary text-white py-1 px-2">
-                <span class="small font-weight-bold text-uppercase">Resource</span>
-              </div>
-
-              <div class="card-body d-flex flex-column py-2 px-3">
-                <h3 class="resource-tile__title h6 mb-1">
+<div class="card-body d-flex flex-column py-1 px-2">
+                <h3 class="resource-tile__title mb-1">
                   {{ resource.title }}
                 </h3>
 
                 {% if resource.framework_recommendation or resource.resource_type %}
-                  <p class="resource-tile__meta small text-muted mb-2">
+                  <p class="resource-tile__meta small text-muted mb-1">
                     {% if resource.framework_recommendation %}
                       <strong>{{ resource.framework_recommendation }}</strong>
                     {% endif %}
@@ -123,17 +119,13 @@ Explicit resources supplied directly:
 
         <div class="resource-tile col-12 col-md-6 col-lg-3 mb-2">
           <div class="card h-100 shadow-sm">
-            <div class="card-header bg-primary text-white py-1 px-2">
-              <span class="small font-weight-bold text-uppercase">Resource</span>
-            </div>
-
-            <div class="card-body d-flex flex-column py-2 px-3">
-              <h3 class="resource-tile__title h6 mb-1">
+<div class="card-body d-flex flex-column py-1 px-2">
+              <h3 class="resource-tile__title mb-1">
                 {{ resource.title }}
               </h3>
 
               {% if resource.framework_recommendation or resource.resource_type %}
-                <p class="resource-tile__meta small text-muted mb-2">
+                <p class="resource-tile__meta small text-muted mb-1">
                   {% if resource.framework_recommendation %}
                     <strong>{{ resource.framework_recommendation }}</strong>
                   {% endif %}
@@ -179,3 +171,26 @@ Explicit resources supplied directly:
     </div>
   </section>
 {% endif %}
+
+<style>
+  /* Compact resource cards, consistent with the teal navigation-card typography. */
+  .resource-tiles-section .resource-tile .card-body {
+    padding: 0.5rem 0.7rem !important;
+  }
+  .resource-tiles-section .resource-tile__title {
+    color: #377A80;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.2rem !important;
+  }
+  .resource-tiles-section .resource-tile__meta {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    margin-bottom: 0.25rem !important;
+  }
+  .resource-tiles-section .resource-tile__links {
+    font-size: 0.78rem;
+    line-height: 1.2;
+  }
+</style>
