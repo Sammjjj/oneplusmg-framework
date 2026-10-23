@@ -1781,7 +1781,7 @@
   access_label_1: Toolkit
 - resource_id: ireland-genomics-training-collection
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'Collated genomics training resources for all audiences'
   short_description: 'Collection of genomics training resources linked from the national Training materials page.'
@@ -1791,9 +1791,9 @@
   - national-coordinators
   - technical-implementers
   - data-stewards
-  resource_type: training-material
+  resource_type: training-resource
   source_or_publisher: 'University of Galway'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://nuigalwayie-my.sharepoint.com/:x:/g/personal/l_whelan18_universityofgalway_ie/EYAegYg2_Z5HnYbRENO4NjgB23AhmbszkXKySaUD1QtoJg'
   access_label_1: 'Training resource collection'
   country: 'Ireland'
@@ -1802,7 +1802,7 @@
   - External link not independently verified
 - resource_id: sweden-starter-kit-deployment-notes
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'Swedish Starter Kit implementation documentation'
   short_description: 'Swedish documentation for deployment of the GDI Starter Kit.'
@@ -1814,7 +1814,7 @@
   - national-coordinators
   resource_type: implementation-resource
   source_or_publisher: 'GDI / Sweden'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://github.com/GenomicDataInfrastructure/starter-kit-se-deployment-notes/tree/docs/initial-documentation'
   access_label_1: 'GitHub documentation'
   country: 'Sweden'
@@ -1823,7 +1823,7 @@
   - External link not independently verified
 - resource_id: luxembourg-starter-kit-deployment-notes
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'Luxembourgish Starter Kit Implementation Notes'
   short_description: 'Luxembourg documentation for deployment of the GDI Starter Kit.'
@@ -1835,7 +1835,7 @@
   - national-coordinators
   resource_type: implementation-resource
   source_or_publisher: 'GDI / Luxembourg'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://github.com/GenomicDataInfrastructure/starter-kit-lu-deployment'
   access_label_1: 'GitHub repository'
   country: 'Luxembourg'
@@ -1844,7 +1844,7 @@
   - External link not independently verified
 - resource_id: portugal-starter-kit-implementation-notes
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'Portuguese Starter Kit Implementation Notes'
   short_description: 'Portuguese notes on implementation of the GDI Starter Kit.'
@@ -1856,7 +1856,7 @@
   - national-coordinators
   resource_type: implementation-resource
   source_or_publisher: 'GDI / Portugal'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://docs.google.com/document/d/1aOBsH3RImsvgV1LlW5HWllDuZnZDXEznMH51yhAirtU/edit?usp=sharing'
   access_label_1: 'Implementation notes'
   country: 'Portugal'
@@ -1865,7 +1865,7 @@
   - External link not independently verified
 - resource_id: netherlands-healthri-elsi-servicedesk
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'HealthRI ELSI Servicedesk'
   short_description: 'Dutch Health-RI service providing information and support on ethical, legal and societal issues for health research.'
@@ -1878,7 +1878,7 @@
   - data-stewards
   resource_type: service
   source_or_publisher: 'Health-RI'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://elsi.health-ri.nl/'
   access_label_1: 'ELSI Servicedesk'
   country: 'Netherlands'
@@ -1887,7 +1887,7 @@
   - External link not independently verified
 - resource_id: ireland-national-strategy-genomic-medicine
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'National Strategy for Accelerating Genetic and Genomic Medicine in Ireland'
   short_description: 'Irish national strategy for accelerating genetic and genomic medicine.'
@@ -1899,7 +1899,7 @@
   - policy-elsi-governance
   resource_type: policy
   source_or_publisher: 'Health Service Executive (Ireland)'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.hse.ie/eng/about/who/strategic-programmes-office-overview/national-strategy-for-accelerating-genetic-and-genomic-medicine-in-ireland/national-strategy-for-accelerating-genetic-and-genomic-medicine-in-ireland.pdf'
   access_label_1: 'National strategy (PDF)'
   country: 'Ireland'
@@ -1908,7 +1908,7 @@
   - External link not independently verified
 - resource_id: ireland-genetic-genomic-implementation-plan-2023
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'Genetic and Genomic Implementation Plan 2023'
   short_description: 'Irish implementation plan associated with the national genetic and genomic medicine strategy.'
@@ -1920,7 +1920,7 @@
   - policy-elsi-governance
   resource_type: implementation-resource
   source_or_publisher: 'Health Service Executive (Ireland)'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.hse.ie/eng/about/who/strategic-programmes-office-overview/national-strategy-for-accelerating-genetic-and-genomic-medicine-in-ireland/genetic-and-genomic-implementation-plan.pdf'
   access_label_1: 'Implementation plan (PDF)'
   country: 'Ireland'
@@ -1929,7 +1929,7 @@
   - External link not independently verified
 - resource_id: italy-national-genomic-plans-workshop-2024
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'Italy: national genomic plans workshop presentation'
   short_description: 'Recording from the GDI workshop on implementing national genomic plans, held on 25 June 2024; Italy''s implementation progress and challenges.'
@@ -1939,9 +1939,9 @@
   audiences:
   - national-coordinators
   - policy-elsi-governance
-  resource_type: video
+  resource_type: training-resource
   source_or_publisher: 'GDI'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.youtube.com/watch?v=nxig1G6B5I4&list=PLweO8RYcVPDOEl66HT6nSwFhjaDUa4xHL&index=1'
   access_label_1: 'Workshop video'
   country: 'Italy'
@@ -1950,7 +1950,7 @@
   - External link not independently verified
 - resource_id: france-national-genomic-plans-workshop-2024
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'France: national genomic plans workshop presentation'
   short_description: 'Recording from the GDI workshop on 25 June 2024 covering France''s 2025 Genomic Medicine Initiative.'
@@ -1960,9 +1960,9 @@
   audiences:
   - national-coordinators
   - policy-elsi-governance
-  resource_type: video
+  resource_type: training-resource
   source_or_publisher: 'GDI'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.youtube.com/watch?v=98u39kpT-mA&list=PLweO8RYcVPDOEl66HT6nSwFhjaDUa4xHL&index=2'
   access_label_1: 'Workshop video'
   country: 'France'
@@ -1971,7 +1971,7 @@
   - External link not independently verified
 - resource_id: denmark-national-genomic-plans-workshop-2024
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'Denmark: national genomic plans workshop presentation'
   short_description: 'Recording from the GDI workshop on 25 June 2024 covering Denmark''s national genomics implementation strategy.'
@@ -1981,9 +1981,9 @@
   audiences:
   - national-coordinators
   - policy-elsi-governance
-  resource_type: video
+  resource_type: training-resource
   source_or_publisher: 'GDI'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.youtube.com/watch?v=u-xbIus23N0&list=PLweO8RYcVPDOEl66HT6nSwFhjaDUa4xHL&index=3'
   access_label_1: 'Workshop video'
   country: 'Denmark'
@@ -1992,7 +1992,7 @@
   - External link not independently verified
 - resource_id: belgium-national-genomic-plans-workshop-2024
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'Belgium: national genomic plans workshop presentation'
   short_description: 'Recording from the GDI workshop on 25 June 2024 covering Belgian genomic initiatives and national and regional activity.'
@@ -2002,9 +2002,9 @@
   audiences:
   - national-coordinators
   - policy-elsi-governance
-  resource_type: video
+  resource_type: training-resource
   source_or_publisher: 'GDI'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.youtube.com/watch?v=-YzWPGTutOQ&list=PLweO8RYcVPDOEl66HT6nSwFhjaDUa4xHL&index=4'
   access_label_1: 'Workshop video'
   country: 'Belgium'
@@ -2013,7 +2013,7 @@
   - External link not independently verified
 - resource_id: b1mg-uk-country-visit-2021
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'B1MG UK country visit (March 2021)'
   short_description: 'B1MG virtual country visit on genomic infrastructure in the UK; 12 recordings.'
@@ -2023,9 +2023,9 @@
   audiences:
   - national-coordinators
   - policy-elsi-governance
-  resource_type: video
+  resource_type: training-resource
   source_or_publisher: 'B1MG'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://youtube.com/playlist?list=PLweO8RYcVPDOWDmFxRHdEGlNsMEubMK5k'
   access_label_1: 'Video playlist'
   country: 'United Kingdom'
@@ -2034,7 +2034,7 @@
   - External link not independently verified
 - resource_id: b1mg-estonia-country-visit-2021
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'B1MG Estonia country visit (May 2021)'
   short_description: 'B1MG virtual country visit on genomic infrastructure in Estonia; 10 recordings.'
@@ -2044,9 +2044,9 @@
   audiences:
   - national-coordinators
   - policy-elsi-governance
-  resource_type: video
+  resource_type: training-resource
   source_or_publisher: 'B1MG'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.youtube.com/playlist?list=PLweO8RYcVPDMTY_Xi0nLSOtD67jeydJJ7'
   access_label_1: 'Video playlist'
   country: 'Estonia'
@@ -2055,7 +2055,7 @@
   - External link not independently verified
 - resource_id: b1mg-finland-country-visit-2021
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'B1MG Finland country visit (June 2021)'
   short_description: 'B1MG virtual country visit on genomic infrastructure in Finland; 10 recordings.'
@@ -2065,9 +2065,9 @@
   audiences:
   - national-coordinators
   - policy-elsi-governance
-  resource_type: video
+  resource_type: training-resource
   source_or_publisher: 'B1MG'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.youtube.com/playlist?list=PLweO8RYcVPDM5ydSVQuQO7WBpkZm8dycy'
   access_label_1: 'Video playlist'
   country: 'Finland'
@@ -2076,7 +2076,7 @@
   - External link not independently verified
 - resource_id: b1mg-country-visit-flash-talks-2021
   include_in_library: true
-  record_status: Pending review
+  record_status: Provisional
   featured: false
   title: 'B1MG country visits: national flash talks (2021)'
   short_description: 'Collection of nine flash talks accompanying the B1MG 2021 virtual country visits, featuring examples from participating countries.'
@@ -2086,9 +2086,9 @@
   audiences:
   - national-coordinators
   - policy-elsi-governance
-  resource_type: video
+  resource_type: training-resource
   source_or_publisher: 'B1MG'
-  resource_status: Status unverified
+  resource_status: To be confirmed
   access_url_1: 'https://www.youtube.com/playlist?list=PLweO8RYcVPDM9Bo_safKw9bQDWueEx6ZA'
   access_label_1: 'Video playlist'
   country: 'Multiple countries'
