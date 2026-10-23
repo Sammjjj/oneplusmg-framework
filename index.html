@@ -94,48 +94,25 @@ navigation_tiles:
     </section>
 </div>                 
     
-<div class="bg-light py-4">              
+<div class="bg-light py-4">
     <section class="p-45">
         <div class="container">
             <h1 class="card-title pb-2 text-center pt-3">Projects</h1>
-            <p class="text-center mb-5">The 1+MG Framework is built from the outputs of the 1+MG project family, including B1MG, B1MG+, GDI (Genomic Data Infrastructure) and Genome of Europe. These projects have developed the foundational components, infrastructure and policy coordination needed to realise the 1+MG Framework.
-            </p>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 pb-4">
-                
+            <div class="row g-4 pb-4">
+                <div class="col-12">
+                    <div class="card border bg-white h-100">
+                        <div class="card-body text-center">
+                            <!-- Icon can be added here later. -->
+                            <h3 class="card-title no-anchor text-primary">1+MG Project Family</h3>
+                            <p class="card-text">Explore the projects which have underpinned to the 1+MG Vision here</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-</div> 
+</div>
 
-        <section class="bg-light py-4">
-            <div class="container">
-                            <h1 class="card-title pb-2 text-center mt-5">Projects</h1>
-                <div class="row">
-                    <div class="col">
-                        <p class="text-center">The 1+MG Framework is built from the outputs of the 1+MG project family, including B1MG, B1MG+, GDI (Genomic Data Infrastructure) and Genome of Europe. These projects have developed the foundational components, infrastructure and policy coordination needed to realise the 1+MG Framework.
-                        </p>
-                    </div>
-                </div>
-                <div class="container-small">
-                    <div class="row">
-                        <div class="col-lg-2 my-auto">
-                            <a class="btn btn-primary btn-lg" href="{{ 'https://b1mg-project.eu/' | relative_url }}">B1MG</a>
-                        </div>
-                        <div class="col-lg-3 my-auto text-right">
-                            <a class="btn btn-primary btn-lg" href="{{ 'https://b1mgplus.onemilliongenomes.eu/' | relative_url }}">B1MGplus</a>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <a class="btn btn-primary btn-lg" href="{{ 'https://gdi.onemilliongenomes.eu/' | relative_url }}">GDI</a>
-                        </div>
-                        <div class="col-lg-5 my-auto">
-                            <a class="btn btn-primary btn-lg" href="{{ 'https://genomeofeurope.eu/' | relative_url }}">Genome of Europe</a>
-                        </div>
-                </div>
-                </div>
-
-            </div>
-        </section>
-     </div>
     {%- if site.theme_variables.back_to_top or site.theme_variables.back_to_top == nil %}
     <button id="back-to-top" class="btn btn-primary" type="button" aria-hidden="true" onclick="topFunction()">
         <i class="fa-solid fa-arrow-up"></i>
