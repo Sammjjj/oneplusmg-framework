@@ -1,4 +1,5 @@
 ---
+show_resource_key: true
 title: "Policies and recommendations"
 description: "Policy instruments, consent guidance and governance recommendations for genomic data sharing."
 permalink: "/elsi-policies-recommendations"
@@ -12,19 +13,19 @@ toc: false
 [Evaluation of the potential legal frameworks for the infrastructure](https://zenodo.org/records/8208479)
 * The establishment of a joint European genomic data infrastructure requires the establishment of a legal basis under Article 6 of the General Data Protection Regulation (GDPR) and a legitimation for processing health and genetic data for the processing within the infrastructure itself as well as for the stakeholders contributing personal data to it or using the personal data. We have identified the challenges related to the the three steps of 1) how to bring data into the 1+Million Genomes (1+MG) infrastructure, 2) how to  disclose data towards users, and 3)how to process data as a user, in particular where data use goes beyond research.
 
-[Policy for special (vulnerable) subjects and groups](https://zenodo.org/record/8279861) <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
+[Policy for special (vulnerable) subjects and groups](https://zenodo.org/record/8279861) {% include resource-marker.html recommendation="Required" %}
 * Recommendations on how to consider the vulnerability and rights of special subjects such as children and special groups subject to vulnerability
 
-[Policy for incidental findings](https://zenodo.org/record/8279737) <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
+[Policy for incidental findings](https://zenodo.org/record/8279737) {% include resource-marker.html recommendation="Required" %}
 * Recommendations for dealing with incidental findings in 1+MG
 
-[Policy for communication of general research results](https://zenodo.org/records/8279796) <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
+[Policy for communication of general research results](https://zenodo.org/records/8279796) {% include resource-marker.html recommendation="Required" %}
 * Information of data subjects and the general public on outcome from research use 
 
-[Data Access and Governance Framework](https://zenodo.org/record/8411102) <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
+[Data Access and Governance Framework](https://zenodo.org/record/8411102) {% include resource-marker.html recommendation="Required" %}
 * This report lists a set of specifications and guidelines needed to allow efficient cross-border access and use of genomes for research in compliance with legal and ethical requirements. 
 
-[Transparency and consent guidance](https://zenodo.org/record/8279851) <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
+[Transparency and consent guidance](https://zenodo.org/record/8279851) {% include resource-marker.html recommendation="Required" %}
 * Minimum standards and recommendations to be considered for information sheets and for obtaining consent for secondary use of data 
 
 [Data Protection / ELSI by Design and Default (DPbDD recommendations):](https://zenodo.org/record/8399424) 
