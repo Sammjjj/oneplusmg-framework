@@ -1,7 +1,13 @@
 ---
-title: Storage and Interfaces
-description: Introduction to Storage and Interfaces
+title: 'Storage and interfaces'
+description: 'Federated data storage, file formats and interoperable interfaces.'
+permalink: "/storage-and-interfaces"
+page_id: storage-and-interfaces
+hide_sidebar: true
 ---
+
+[← Technical infrastructure]({{ '/technical-infrastructure' | relative_url }})
+
 
 Organisations store data and offer interfaces (APIs) following international standards that form the technically interoperable infrastructure backbone. Service building is assumed to leverage national and European investments in e-infrastructure capacities. Storage & interfaces need to provide techniques ensuring data privacy and confidentiality.
 
@@ -18,12 +24,3 @@ Crypt4GH is an encryption standard that uses one or more encryption keys to encr
 
 ### [Simpl](https://digital-strategy.ec.europa.eu/en/news/simpl-cloud-edge-federations-and-data-spaces-made-simple-updated-august-2023) <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
 Simpl is the smart middleware that will enable cloud-to-edge federations and support all major data initiatives funded by the European Commission, such as common European data spaces. It will be the basis for a European Cloud Federation enabling the operation and interconnection within and in between various European data spaces and the safe migration of the users to the cloud.
-
-
-
-
-
-
-
-
-
