@@ -31,7 +31,7 @@ navigation_tiles:
 <div class="landingpage">
     <section class="p-45">
         <div class="container">
-            <h1 class="card-title pb-2 text-center pt-3">1+MG Framework Foundations</h1>
+            <h1 class="card-title pb-2 text-center pt-3"><a href="{{ '/framework-foundations' | relative_url }}" class="text-reset text-decoration-none">1+MG Framework Foundations</a></h1>
             <p class="text-center mb-5">Explore the governance, technical, data and healthcare foundations for secure genomic data sharing across Europe</p>
 
             {%- assign sidebar1 = site.data.sidebars[page.sidebar1] %}
@@ -60,7 +60,7 @@ navigation_tiles:
 <div class="landingpage bg-light">
     <section class="p-45">
         <div class="container">
-            <h1 class="card-title pb-2 text-center pt-3">Applying the 1+MG Framework</h1>
+            <h1 class="card-title pb-2 text-center pt-3"><a href="{{ '/application-of-the-framework' | relative_url }}" class="text-reset text-decoration-none">Applying the 1+MG Framework</a></h1>
             <p class="text-center mb-5">Design principles and real-world applications of the Framework across Europe</p>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 pb-4">
@@ -87,7 +87,7 @@ navigation_tiles:
 <div class="landingpage">
     <section class="p-45">
         <div class="container">
-            <h1 class="card-title pb-2 text-center pt-3">Navigate the framework by role</h1>
+            <h1 class="card-title pb-2 text-center pt-3"><a href="{{ '/navigate-by-role' | relative_url }}" class="text-reset text-decoration-none">Navigate the framework by role</a></h1>
             <p class="text-center mb-5">Find the guidance and resources most relevant to your role in the 1+MG initiative</p>
 
             {% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
