@@ -22,3 +22,10 @@ navigation_tiles:
      resource_ids="data-access-governance-framework,beacon,minimal-metadata-model,b1mg-maturity-level-model-report"
   %}
 </div>
+
+<style>
+  /* On this landing page, let the final resource band meet the footer. */
+  main#main.mb-5 {
+    margin-bottom: 0 !important;
+  }
+</style>
