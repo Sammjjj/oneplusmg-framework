@@ -31,29 +31,6 @@ navigation_tiles:
 <div class="landingpage">
     <section class="p-45">
         <div class="container">
-            <h1 class="card-title pb-2 text-center pt-3">Navigate the framework by role</h1>
-            <p class="text-center mb-5">Find the guidance and resources most relevant to your role in the 1+MG initiative</p>
-
-            {% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
-
-            <div class="row g-4 pb-4">
-                <div class="col-12">
-                    <div class="card border bg-white h-100">
-                        <div class="card-body text-center">
-                            <a href="{{ '/navigate-by-role' | relative_url }}" class="stretched-link">
-                                <h3 class="card-title no-anchor text-primary">Explore how to navigate the framework by role here</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<div class="landingpage bg-light">
-    <section class="p-45">
-        <div class="container">
             <h1 class="card-title pb-2 text-center pt-3">1+MG Framework Foundations</h1>
             <p class="text-center mb-5">Explore the governance, technical, data and healthcare foundations for secure genomic data sharing across Europe</p>
 
@@ -80,7 +57,7 @@ navigation_tiles:
     </section>
 </div>
 
-<div class="landingpage">
+<div class="landingpage bg-light">
     <section class="p-45">
         <div class="container">
             <h1 class="card-title pb-2 text-center pt-3">Applying the 1+MG Framework</h1>
@@ -102,6 +79,29 @@ navigation_tiles:
                     </div>
                 </div>
                 {%- endfor %}
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="landingpage">
+    <section class="p-45">
+        <div class="container">
+            <h1 class="card-title pb-2 text-center pt-3">Navigate the framework by role</h1>
+            <p class="text-center mb-5">Find the guidance and resources most relevant to your role in the 1+MG initiative</p>
+
+            {% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
+
+            <div class="row g-4 pb-4">
+                <div class="col-12">
+                    <div class="card border bg-white h-100">
+                        <div class="card-body text-center">
+                            <a href="{{ '/navigate-by-role' | relative_url }}" class="stretched-link">
+                                <h3 class="card-title no-anchor text-primary">Explore how to navigate the framework by role here</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
