@@ -40,10 +40,4 @@ navigation_tiles:
     width: 100vw;
     transform: translateX(-50%);
   }
-  .role-resources-full-width .resource-tiles-section > h2,
-  .role-resources-full-width .resource-tiles-section > .resource-tiles {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 </style>
