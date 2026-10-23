@@ -43,11 +43,3 @@ If you are new to the 1+MG Framework and you want to understand how to use or im
 ### About
 This section explains the concept of the 1+MG Framework, how to interact with it and the <a href="{{ '/editorial_guidelines' | relative_url }}">editorial guidlines</a>. 
 
-
-
-
-**We are still working on the content for this page.** If you are interested in adding to the page, then:
-
-[Feel free to contribute](how_to_contribute){: class="btn btn-primary btn-lg rounded-pill"}
-
-This is a community-driven website, so contributions are welcome! You will, of course, be listed as a contributor on the page.
