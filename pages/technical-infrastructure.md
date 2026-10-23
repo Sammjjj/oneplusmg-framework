@@ -1,10 +1,31 @@
 ---
 title: 'Technical Infrastructure'
-description: Introduction to Technical Infrastructure
+description: 'Technical guidance and interoperability standards for the 1+MG federated infrastructure.'
 permalink: "/technical-infrastructure"
 page_id: technical-infrastructure
+hide_sidebar: true
+toc: false
+navigation_tiles:
+  - page_id: data-discovery
+    anchor_id: data-discovery
+  - page_id: data-reception
+    anchor_id: data-reception
+  - page_id: storage-and-interfaces
+    anchor_id: storage-interfaces
+  - page_id: access-management
+    anchor_id: data-access-management-tools
+  - page_id: data-processing
+    anchor_id: processing
 ---
 
+The 1+MG technical infrastructure supports secure, interoperable access to genomic and associated clinical data across European nodes. It uses shared technical approaches to enable discovery, data reception, storage, access management and federated processing.
+
+The 1+MG technical infrastructure is broken down into five functionalities as defined in the 2021 paper titled, [“Towards a Proof of Concept of Federated Infrastructure for the EU 1+ Million Genome Initiative”](https://zenodo.org/record/6089583).  This includes: Data Discovery, Data Reception, Storage and Interfaces, Data Access Management, and Processing.  These functionalities were originally defined as follows:
+
+<span id="infrastructure-components"></span>
+{% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
+
+<span id="infrastructure-vision"></span>
 ## Infrastructure Vision
 
 ### [B1MG Secure cross-border data access roadmap v2.0](https://zenodo.org/record/5018526#.YXGlNNbMKdY): June 2021 <span class="badge badge-primary">Informational<i class="fa-sharp fa-solid fa-circle-info"></i></span>
@@ -17,25 +38,7 @@ The 1+MG data infrastructure needs to be defined to ensure data managed within t
 
 In this deliverable a Proof of Concept (PoC) was built using existing standards, applications, and services to demonstrate cross border data access for two 1+MG use cases; rare disease and cancer. The intention is to create a technical infrastructure baseline and advancement for the next iteration of implementation data protection principles according to the GDPR
 
-## Infrastructure Components
-
-The 1+MG technical infrastructure is broken down into five functionalities as defined in the 2021 paper titled, [“Towards a Proof of Concept of Federated Infrastructure for the EU 1+ Million Genome Initiative”](https://zenodo.org/record/6089583).  This includes: Data Discovery, Data Reception, Storage and Interfaces, Data Access Management, and Processing.  These functionalities were originally defined as follows:
-
-### <a href="{{'/data-discovery' | relative_url}}">Data Discovery</a>
-Data discoverability Provides the public visibility to the combined 1+MG dataset by making selected descriptive metadata searchable. Data discovery service will collect summary level (but not sensitive) descriptions of all data available from the signatory states. It will link directly to Data Access Management where users can apply for data access.
-
-### <a href="{{'/data-reception' | relative_url}}">Data Reception</a>
-Uniform processes (such as quality control and standardisation) to receive (download) or access (API) both data and metadata in a consistent way enabling infrastructure to adhere to global standards and principles (e.g. GA4GH, FAIR) for genotypic and phenotypic data. Data reception means logically describing datasets to an extent that they can become actionable on the 1+MG infrastructure even if they are stored nationally or locally. 
-
-### <a href="{{'/storage-and-interfaces' | relative_url}}">Storage & Interfaces</a>
-Organisations store data and offer interfaces (APIs) following international standards that form the technically interoperable infrastructure backbone. Service building is assumed to leverage national and European investments in e-infrastructure capacities. Storage & interfaces need to provide techniques ensuring data privacy and confidentiality.
-
-### <a href="{{'/access-management' | relative_url}}">Data Access Management Tools</a>
-Sensitive data needs specialised services to manage data in an ELSI-compliant way. These include e.g. central access portal, central access review process, single collaboration/data use agreement. These tools store user applications for data use and the decisions from the data controllers, i.e. data access authorisations within the legal framework, as well as APIs and standards to communicate access rights to downstream infrastructure services. Together, these tools and processes facilitate and audit secure access for users on a chosen Data Processing service platform.
-
-### <a href="{{'/data-processing' | relative_url}}">Processing</a>
-Local, high-performance and cloud computing must fulfil appropriate security standards to provide processing capacities for human data coordinated in 1+MG. Distinct processing events happen on the infrastructure: Localisation of the data and code to the appropriate platform (local or distributed) and data analysis by the individual data user who has acquired the access rights for the intended data use. 
-
+## Technical interoperability
 
 Global Alliance for Genomics and Health (GA4GH) standards are used to link the different applications supporting the five technical functionalities within the B1MG Proof of Concept.  The chosen standards aligned with the functionalities can be seen in the diagram below.  While none of these standards are required for a Node to implement, they can be seen as the interoperability backbone of the infrastructure.
 
@@ -47,15 +50,27 @@ Global Alliance for Genomics and Health (GA4GH) standards are used to link the d
 
 <figcaption class="text-center">Rare Disease Proof of Concept Schema</figcaption>-->
 
+<span id="european-genomes-dashboard"></span>
+<span id="user-portal-central-services"></span>
 ## [European Genomes Dashboard](https://dashboard.onemilliongenomes.eu/)
 This dashboard shows the current number of genomic datasets across the 1+MG Member States.
 
 ## User Portal & Central Services
 * Under development by the European Genomic Data Infrastructure project, the User Portal will be the main European-level entry point for data access within the infrastructure.
 
+<div class="technical-resources-full-width">
+  {% include resource-tiles_compact.html
+     resource_ids="b1mg-secure-cross-border-data-access-roadmap-v2,b1mg-secure-access-demonstrator,beacon,life-science-login"
+  %}
+</div>
 
-
-
-
-
-
+<style>
+  .container.min-vh-100 { min-height: 0 !important; }
+  main#main.mb-5 { margin-bottom: 0 !important; padding-bottom: 20px; }
+  .technical-resources-full-width {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+  }
+</style>
