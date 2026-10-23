@@ -1,4 +1,5 @@
 ---
+show_resource_key: true
 title: Population Genomics - Genome of Europe (GoE)
 description: The Genome of Europe project was created to have a Europe-wide collection of subgroup-specific reference genomes to support population genomics and make precision medicine more robust.
 page_id: population-genomics
@@ -6,7 +7,7 @@ sidebar: framework2
 ---
 
 ## [Genome of Europe Plan](https://zenodo.org/record/8017856) 
-<span class="badge badge-primary">Informational<i class="fa-sharp fa-solid fa-circle-info"></i></span>
+{% include resource-marker.html recommendation="Informational" %}
 
 A 1+MG initiative aiming to deliver more than 500,000 whole genome sequences (WGS) as a reference database to represent genetic diversity across Europe. One objective of the GoE is to contribute to the 1+MG effort begun in 2018 where 24 signatory countries declared to make the data accessible for the genomes of at least 1,000,000 European citizens.  This will require existing genomes to be made available for access and new genomes to be created by whole genome sequencing.  The main goal of this effort is to create the reference dataset for genomic health programs in European countries.
 
