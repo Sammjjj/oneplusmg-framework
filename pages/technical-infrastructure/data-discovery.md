@@ -1,7 +1,13 @@
 ---
-title: Data discovery
-description: Introduction to data discovery
+title: 'Data discovery'
+description: 'Find and describe distributed genomic data using interoperable discovery services.'
+permalink: "/data-discovery"
+page_id: data-discovery
+hide_sidebar: true
 ---
+
+[← Technical infrastructure]({{ '/technical-infrastructure' | relative_url }})
+
 
 Data discovery provides the public visibility to the combined 1+MG dataset by making selected descriptive metadata searchable. Data discovery service will collect summary level (but not sensitive) descriptions of all data available from the signatory states. It will link directly to Data Access Management where users can apply for data access.
 
@@ -19,8 +25,3 @@ The 1+MG Beacon Network allows for Data Users who have fulfilled the Data Access
 
 ### DCAT-AP <span class="badge badge-warning">Required<i class="fa-sharp fa-regular fa-star"></i></span>
 DCAT-AP is the European standard to aggregate data collections across borders in a single portal (1+MG User Portal currently in development) that facilitates integration and discovery by users of 1+MG, EHDS and other EU Data Spaces.
-
-
-
-
-
