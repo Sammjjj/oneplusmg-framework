@@ -3,35 +3,7 @@
 
 <div id="resource-library" class="resource-library" data-resource-library>
   <div class="resource-library__intro">
-    <div class="resource-library__key-popover-wrap" data-key-wrap>
-      <button type="button" class="resource-library__key resource-library__key-trigger" data-key-trigger aria-controls="resource-key-help" aria-expanded="false" aria-label="Explanation of Required, Recommended and Informational labels">
-
-      <span class="resource-library__key-title">Key:</span>
-      <span class="resource-library__key-item">
-        <span class="resource-marker resource-marker--required" aria-hidden="true"></span>
-        Required
-      </span>
-      <span class="resource-library__key-item">
-        <span class="resource-marker resource-marker--recommended" aria-hidden="true"></span>
-        Recommended
-      </span>
-      <span class="resource-library__key-item">
-        <span class="resource-marker resource-marker--informational" aria-hidden="true"></span>
-        Informational
-      </span>
-        <span class="resource-library__key-info" aria-hidden="true">ⓘ</span>
-      </button>
-      <div id="resource-key-help" class="resource-library__key-popover" role="region" aria-label="Recommendation labels explained">
-        <button type="button" class="resource-library__key-close" data-key-close aria-label="Close explanation">&times;</button>
-        <h3>Required/Recommended/Informational Labels</h3>
-        <p>In order to determine the importance of each resource for development of each Node, most resources are labelled with one of the following tags:</p>
-        <ul>
-          <li><strong>Required:</strong> Some or all of this resource is required for being part of this infrastructure. In some cases (particularly with the policies) some parts of the resource will be optional (and will be labeled with the language “may”, “should”, or “must” as appropriate), however some elements are required and are thus given this overall label.</li>
-          <li><strong>Recommended:</strong> While not integral to being part of the infrastructure, these are helpful resources which will help you align across Europe and beyond and have been vetted by the project teams.</li>
-          <li><strong>Informational:</strong> These are resources that serve as guides and background information.</li>
-        </ul>
-      </div>
-    </div>
+    {% include resource-key.html %}
   </div>
 
   <div class="resource-library__controls" aria-label="Filter resources">
@@ -178,8 +150,7 @@
           data-search="{{ search_text | strip_newlines | downcase | escape }}">
 
           <td class="resource-library__marker-cell">
-            <span class="resource-marker resource-marker--{{ rec_key }}" aria-hidden="true"></span>
-            <span class="visually-hidden">{{ recommendation }}</span>
+            {% include resource-marker.html recommendation=recommendation show_text=false %}
           </td>
 
           <td class="resource-library__resource-cell">
@@ -250,48 +221,6 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 0.75rem;
-}
-
-.resource-library__key-popover-wrap { position: relative; max-width: 100%; }
-.resource-library__key-trigger { border: 0; padding: 0; background: transparent; color: inherit; font: inherit; cursor: help; text-align: left; }
-.resource-library__key-trigger:focus-visible { outline: 2px solid var(--bs-primary, #004494); outline-offset: 3px; }
-.resource-library__key-info { color: var(--bs-primary, #004494); font-size: 1rem; }
-.resource-library__key-popover {
-  display: none; position: absolute; right: 0; top: 100%;
-  z-index: 30; width: min(38rem, calc(100vw - 2rem)); max-height: min(70vh, 35rem);
-  overflow-y: auto; padding: 1.1rem 1.4rem 1rem;
-  border: 1px solid #ced4da; border-radius: 0.4rem; background: #fff;
-  box-shadow: 0 0.4rem 1.3rem rgba(0, 0, 0, 0.18);
-  font-size: 0.9rem; line-height: 1.45;
-}
-.resource-library__key-popover h3 { margin: 0 1.3rem 0.7rem 0; font-size: 1.05rem; }
-.resource-library__key-popover p { margin-bottom: 0.65rem; }
-.resource-library__key-popover ul { margin: 0; padding-left: 1.3rem; }
-.resource-library__key-popover li + li { margin-top: 0.55rem; }
-.resource-library__key-close { position: absolute; right: 0.45rem; top: 0.25rem; border: 0; background: transparent; font-size: 1.5rem; line-height: 1.3; cursor: pointer; }
-.resource-library__key-popover-wrap:hover:not(.is-dismissed) .resource-library__key-popover,
-.resource-library__key-popover-wrap:focus-within:not(.is-dismissed) .resource-library__key-popover,
-.resource-library__key-popover-wrap.is-pinned .resource-library__key-popover { display: block; }
-@media (hover: none) {
-  .resource-library__key-popover-wrap:hover:not(.is-pinned):not(:focus-within) .resource-library__key-popover { display: none; }
-}
-
-.resource-library__key {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  align-items: center;
-  font-size: 0.92rem;
-}
-
-.resource-library__key-title {
-  font-weight: 600;
-}
-
-.resource-library__key-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
 }
 
 .resource-library__controls {
@@ -430,31 +359,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const library = document.querySelector("[data-resource-library]");
   const displayLabels = {{ site.data.resource_display_labels | jsonify }};
   if (!library) return;
-
-  const keyWrap = library.querySelector("[data-key-wrap]");
-  const keyTrigger = library.querySelector("[data-key-trigger]");
-  const keyClose = library.querySelector("[data-key-close]");
-  function pinKey(pinned) {
-    keyWrap.classList.toggle("is-pinned", pinned);
-    keyTrigger.setAttribute("aria-expanded", String(pinned));
-  }
-  keyTrigger.addEventListener("click", () => {
-    keyWrap.classList.remove("is-dismissed");
-    pinKey(!keyWrap.classList.contains("is-pinned"));
-  });
-  keyClose.addEventListener("click", () => { pinKey(false); keyWrap.classList.add("is-dismissed"); keyTrigger.blur(); keyClose.blur(); });
-  keyWrap.addEventListener("mouseleave", () => keyWrap.classList.remove("is-dismissed"));
-  document.addEventListener("pointerdown", event => {
-    if (!keyWrap.contains(event.target)) pinKey(false);
-  });
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape") {
-      pinKey(false);
-      keyWrap.classList.add("is-dismissed");
-      if (keyWrap.contains(document.activeElement)) document.activeElement.blur();
-    }
-  });
-
 
   const rowsContainer = library.querySelector("[data-resource-rows]");
   const rows = Array.from(library.querySelectorAll("[data-resource-row]"));
