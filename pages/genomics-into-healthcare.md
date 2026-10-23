@@ -21,11 +21,6 @@ Implementation of genomics in healthcare is complex and requires adjustments in 
 
 Facilitating dialogue and cooperation among countries for capacity building and sharing of best practices is key to promoting equity in access to Personal Medicine across Europe.
 
-To fully exploit the potential of genomic information to benefit citizens health, it is crucial to understand how effectively healthcare systems implement genomic medicine. In the context of the 1+ Million Genomes Initiative (1+MG), a Maturity Level Model (MLM) was developped for healthcare systems to evaluate the maturity of their genomic medicine practices, and define a path to optimization.
-
-
-<img src="{{ 'assets/img/1+mg-roadmap-v2.png' | relative_url }}" class="m-2" style="max-width:100%; max-height: 100%; vertical-align: middle" alt="1+MG Roadmap" />
-
 {% include page-navigation-tiles.html tiles=page.navigation_tiles %}
 
 <div class="healthcare-resources-full-width">
