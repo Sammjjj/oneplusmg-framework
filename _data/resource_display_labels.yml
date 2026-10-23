@@ -1,0 +1,33 @@
+# Human-readable presentation labels for resource metadata codes.
+# Keep the canonical codes in resources.yml unchanged so tagging and filtering remain stable.
+topics:
+  data-metadata: "Data and metadata"
+  data-quality-inclusion: "Data quality and inclusion"
+  external-alignment: "External alignment"
+  healthcare-integration: "Healthcare integration"
+  legal-ethics-governance: "Legal, ethics and governance"
+  national-implementation: "National implementation"
+  sustainability: "Sustainability"
+  technical-infrastructure: "Technical infrastructure"
+  use-cases: "Use cases"
+audiences:
+  citizen-engagement: "Citizen engagement"
+  data-stewards: "Data stewards"
+  national-coordinators: "National coordinators"
+  policy-elsi-governance: "Policy, ELSI and governance"
+  technical-implementers: "Technical implementers"
+types:
+  api: "API"
+  assessment-model: "Assessment model"
+  catalogue: "Catalogue"
+  data-model: "Data model"
+  demonstrator: "Demonstrator"
+  evidence-review: "Evidence review"
+  guidance: "Guidance"
+  implementation-resource: "Implementation resource"
+  ontology: "Ontology"
+  policy: "Policy"
+  report: "Report"
+  service: "Service"
+  specification: "Specification"
+  tool: "Tool"
