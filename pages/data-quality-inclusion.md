@@ -1,7 +1,13 @@
 ---
-title: Data quality and inclusion
-description: Introduction to data quality and inclusion
+title: "Data quality and inclusion"
+description: "Sequence data generation and quality requirements for WGS/WES data to be labelled as 1+MG compliant."
+permalink: "/data-quality-inclusion"
+page_id: data-quality-inclusion
+hide_sidebar: true
 ---
+
+[← Data and metadata]({{ '/data-metadata' | relative_url }})
+
 
 Guidelines and best practices for sequencing and data generation with a focus on ensuring data quality.
 
@@ -50,9 +56,3 @@ This deliverable focuses on creating a use case demonstrator package, which incl
 ## [Report to identify the initial set of relevant data for use cases](https://zenodo.org/records/10887528)
 
 Establishing minimal datasets and standards within GDI facilitates seamless data exchange, driving innovation in healthcare and improving patient outcomes. Deliverable 7.4 encapsulates the collaborative efforts of GDI, 1+MG, and B1MG initiatives towards establishing minimal datasets and standards for genomic data exchange and integration. Efforts focused on leveraging prior work from 1+MG and B1MG initiatives to define minimal datasets for GDI use cases, particularly in Cancer, Infectious Diseases and the Genome of Europe. Collaborative refinement processes ensured comprehensive standards adherence.
-
-
-
-
-
-
