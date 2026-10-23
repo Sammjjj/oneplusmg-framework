@@ -36,8 +36,4 @@ The 1+MG Initiative and related projects provide technical and ELSI guidelines w
 
 To contribute your country’s Genomic Data Infrastructure’s solutions, please email [framework@elixir-europe.org](mailto:framework@elixir-europe.org) and include your country, a permanent, sharable link to your resource and the category or categories under which it fits.  If you are not the National Mirror Group lead for your country, please make sure you copy them into the email for approval.
 
-**We are still working on the content for this page.** If you are interested in adding to the page, then:
 
-[Feel free to contribute](how_to_contribute){: class="btn btn-primary btn-lg rounded-pill"}
-
-This is a community-driven website, so contributions are welcome! You will, of course, be listed as a contributor on the page.
