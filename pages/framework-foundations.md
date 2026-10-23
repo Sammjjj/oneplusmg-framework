@@ -17,7 +17,7 @@ navigation_tiles:
   <p>Explore the four areas above for guidance on legal, ethical and governance considerations, technical infrastructure, data and metadata, and the integration of genomics into healthcare and its long-term sustainability. Each area brings together the principles, recommendations and resources relevant to planning and implementing the Framework.</p>
 </div>
 
-<div class="mx-auto" style="max-width: 1000px;">
+<div class="foundations-resources-full-width">
   {% include resource-tiles_compact.html
      resource_ids="data-access-governance-framework,beacon,minimal-metadata-model,b1mg-maturity-level-model-report"
   %}
@@ -30,5 +30,20 @@ navigation_tiles:
   }
   main#main.mb-5 {
     margin-bottom: 0 !important;
+    padding-bottom: 20px;
+  }
+  /* Extend the resource band to both viewport edges, outside the page container. */
+  .foundations-resources-full-width {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+  }
+  /* Keep the resource tiles readable instead of stretching each card. */
+  .foundations-resources-full-width .resource-tiles-section > h2,
+  .foundations-resources-full-width .resource-tiles-section > .resource-tiles {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
