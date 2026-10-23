@@ -1,7 +1,13 @@
 ---
-title: Data models, standards and ontologies
-description: Introduction to data standards
+title: "Data models, standards and ontologies"
+description: "1+MG minimal data models for different use cases and recommendations on ontologies and data standards."
+permalink: "/data-models-ontologies"
+page_id: data-models-ontologies
+hide_sidebar: true
 ---
+
+[← Data and metadata]({{ '/data-metadata' | relative_url }})
+
 
 Within large Europe-wide initiatives like the 1+MG initiative both germline and tumour sequencing data is generated at different sites and by different laboratories and in different contexts (research vs. clinical).
 
@@ -66,8 +72,3 @@ DCAT-AP is the implementation of the European standard to aggregate data collect
 The Genomic Data Infrastructure (GDI) project aims to overcome or lower barriers in clinical diagnostics and treatment by facilitating access to fragmented human genomics data across Europe. The project establishes a federated, secure infrastructure, but faces interoperability challenges on all 6 layers of the refined eHealth European Interoperability Framework due to the diversity of implementations of law and regulations, various organisational setups, data sources and infrastructures.  
 
 To address this issue, a framework for solving interoperability scenarios is proposed. This framework is able to take on a variety of relevant interoperability building blocks and interoperability scenarios that are listed in this deliverable. Key framework components include shared logical models from which we derive data management systems that serve intrinsically interoperable APIs. These systems are allowed to make different model selections or use different software products while maintaining interoperability.
-
-
-
-
-
