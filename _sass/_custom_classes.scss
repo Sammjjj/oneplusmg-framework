@@ -47,6 +47,22 @@
     max-width: 40%;
 }
 
+/* Consistent interaction feedback for page-navigation tiles and resource cards.
+   The homepage .landingpage cards already use $box-shadow on hover. */
+.page-navigation-tiles .card,
+.resource-tile .card {
+    transition: box-shadow 0.2s ease;
+}
+
+.page-navigation-tiles .card:hover,
+.page-navigation-tiles .card:focus-within,
+.page-navigation-tiles .card:active,
+.resource-tile .card:hover,
+.resource-tile .card:focus-within,
+.resource-tile .card:active {
+    box-shadow: $box-shadow !important;
+}
+
 /*-----Section navigation tiles-----*/
 
 .navigation-tiles {
