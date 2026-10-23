@@ -1,7 +1,13 @@
 ---
-title: Data processing
-description: Introduction to data processing
+title: 'Data processing'
+description: 'Portable workflows and secure federated data analysis.'
+permalink: "/data-processing"
+page_id: data-processing
+hide_sidebar: true
 ---
+
+[← Technical infrastructure]({{ '/technical-infrastructure' | relative_url }})
+
 
 
 Local, high-performance and cloud computing must fulfil appropriate security standards to provide processing capacities for human data coordinated in 1+MG. Distinct processing events happen on the infrastructure: Localisation of the data and code to the appropriate platform (local or distributed) and data analysis by the individual data user who has acquired the access rights for the intended data use.  
@@ -22,12 +28,3 @@ Federated learning is described as a distributed machine learningtechnique in wh
 ### [Evaluation of distributed analysis and federated learning infrastructure solutions and recommendations for adoption](https://zenodo.org/records/10887366)
 
 The completion of the first iteration of the Global Data Initiative technical demonstrators marks a significant milestone in collaborative efforts defining the next level of technologies that will be incorporated into the project. Three key demonstrators showcased advancements in distributed and federated analysis, cancer data mobilisation, and trusted research environments. Advancements in Distributed and Federated Analysis, Cancer Data Mobilization and Integration, and Advancements in Trusted Research Environments:
-
-
-
-
-
-
-
-
-
