@@ -21,10 +21,6 @@ The 1+MG Beacon Network allows for Data Users who have fulfilled the Data Access
 DCAT-AP is the European standard to aggregate data collections across borders in a single portal (1+MG User Portal currently in development) that facilitates integration and discovery by users of 1+MG, EHDS and other EU Data Spaces.
 
 
-**We are still working on the content for this page.** If you are interested in adding to the page, then:
 
-[Feel free to contribute](how_to_contribute){: class="btn btn-primary btn-lg rounded-pill"}
-
-This is a community-driven website, so contributions are welcome! You will, of course, be listed as a contributor on the page.
 
 
