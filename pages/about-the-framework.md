@@ -26,13 +26,14 @@ navigation_tiles:
     image_url: /assets/img/section-icons/privacy.svg
 ---
 
-{% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
-
 <div class="my-4">
   <p>The 1+ Million Genomes (1+MG) initiative brings together European countries working towards secure, ethical and interoperable access to genomic and related clinical data. The 1+MG Framework brings together guidance, recommendations and resources developed through the initiative and supporting projects to help turn this shared ambition into practice.</p>
 
   <p>This section provides background on the Framework and the projects that have contributed to it. You can explore the project portfolio, learn how the website and its resources are organised, or find contact, accessibility and privacy information. The selected resources below introduce terminology, data lifecycle concepts and approaches developed through the 1+MG project family.</p>
 </div>
+
+{% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
+
 
 <div class="about-resources-full-width">
   {% include resource-tiles_compact.html
