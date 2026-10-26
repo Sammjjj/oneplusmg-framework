@@ -7,12 +7,15 @@ navigation_tiles:
   - title: Use cases
     description: Information on the scientific and clinical questions driving our development
     url: /usecases
+    image_url: /assets/img/section-icons/use-case.svg
   - title: External alignment
     description: Discover how the 1+MG infrastructure is connected across Europe and beyond
     url: /ehds-data-lifecycle
+    image_url: /assets/img/section-icons/user-journey.svg
   - title: National implementation
     description: See how countries are integrating and adapting the Framework
     url: /national-implementation
+    image_url: /assets/img/section-icons/nation.svg
 ---
 
 {% include page-navigation-tiles.html tiles=page.navigation_tiles %}
