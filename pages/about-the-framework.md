@@ -7,6 +7,7 @@ navigation_tiles:
   - title: "1+MG Project Portfolio"
     description: "Learn about the projects contributing to the 1+MG vision and Framework."
     url: /1mg-projects
+    image_url: /assets/img/section-icons/project-family.svg
   - title: "How to use the Framework"
     description: "Understand how this website's guidance and resources are organised."
     url: /how-to-use-framework
