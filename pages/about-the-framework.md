@@ -11,15 +11,19 @@ navigation_tiles:
   - title: "How to use the Framework"
     description: "Understand how this website's guidance and resources are organised."
     url: /how-to-use-framework
+    image_url: /assets/img/section-icons/how-to-use.svg
   - title: "Contact"
     description: "Find out how to get in touch about the Framework."
     url: /contact
+    image_url: /assets/img/section-icons/contact.svg
   - title: "Accessibility"
     description: "Read information about accessibility of this website."
     url: /accessibility
+    image_url: /assets/img/section-icons/accessibility.svg
   - title: "Privacy"
     description: "Read the website's privacy information."
     url: /privacy
+    image_url: /assets/img/section-icons/privacy.svg
 ---
 
 {% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
