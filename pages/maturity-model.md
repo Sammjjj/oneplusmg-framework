@@ -9,7 +9,7 @@ toc: false
 
 [← Healthcare integration and sustainability]({{ '/genomics-into-healthcare' | relative_url }})
 
-### [Genomics in Healthcare Maturity Level Model](https://b1mg-project.eu/resources/maturity-level-model)
+### [Genomics in Healthcare Maturity Level Model]({{ '/maturity-model/view/' | relative_url }})
 
 A tool for healthcare systems to self-evaluate the level of maturity of their genomic medicine practices according to a common matrix, and to define a path to optimization. 
 
