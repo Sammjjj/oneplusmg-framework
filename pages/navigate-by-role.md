@@ -5,10 +5,15 @@ page_id: navigate-by-role
 permalink: "/navigate-by-role"
 navigation_tiles:
   - page_id: national-coordinators
+    image_url: /assets/img/section-icons/national-coordinators.svg
   - page_id: technical-implementers
+    image_url: /assets/img/section-icons/technical-implementers.svg
   - page_id: data-stewards
+    image_url: /assets/img/section-icons/data-stewards.svg
   - page_id: policy-elsi-governance
+    image_url: /assets/img/section-icons/policy-elsi-governance.svg
   - page_id: citizen-engagement
+    image_url: /assets/img/section-icons/citizen-engagement.svg
 ---
 
 {% include page-navigation-tiles.html tiles=page.navigation_tiles five_column_grid=true %}
