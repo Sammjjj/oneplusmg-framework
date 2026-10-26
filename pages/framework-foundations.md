@@ -4,9 +4,13 @@ permalink: "/framework-foundations"
 page_id: framework-foundations
 navigation_tiles:
   - page_id: governance-elsi
+    image_url: /assets/img/section-icons/data-standard-v1.svg
   - page_id: technical-infrastructure
+    image_url: /assets/img/section-icons/data-infrastructure-v1.svg
   - page_id: data-metadata
+    image_url: /assets/img/section-icons/data-governance-v1.svg
   - page_id: genomics-into-healthcare
+    image_url: /assets/img/section-icons/genomics-into-healthcare.svg
 ---
 
 {% include page-navigation-tiles.html tiles=page.navigation_tiles %}
